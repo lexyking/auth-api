@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
 
-mongoose.connect("mongodb+srv://lexy:alexandre@auth-api-2ekny.mongodb.net/test?retryWrites=true&w=majority",
+dotenv.config();
+
+mongoose.connect(
+  process.env.DB_CONNECT,
   { useNewUrlParser: true },
   () => {
     console.log("connected to db!");
