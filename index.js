@@ -1,5 +1,12 @@
 const express = require("express");
 const app = express();
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb+srv://lexy:alexandre@auth-api-2ekny.mongodb.net/test?retryWrites=true&w=majority",
+  { useNewUrlParser: true },
+  () => {
+    console.log("connected to db!");
+  })
 
 
 //Import Routes
