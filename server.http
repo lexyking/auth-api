@@ -1,1 +1,8 @@
-POST "http://localhost:3000/api/user/register"
+POST http://localhost:3000/api/user/register
+content-type: application/json
+
+{
+  "name": "",
+  "email": "lexy@yahoo.fr",
+  "password": "la vie est belle"
+}

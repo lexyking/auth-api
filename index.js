@@ -16,8 +16,12 @@ mongoose.connect(
 //Import Routes
 const authRoute = require("./routes/auth");
 
+app.use(express.json());
+
 //Route Middlewares
 app.use("/api/user", authRoute);
+
+
 
 const port = process.env.PORT || 3000
 
