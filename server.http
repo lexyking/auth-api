@@ -1,8 +1,3 @@
-POST http://localhost:3000/api/user/register
+GET  http://localhost:3000/api/posts/
 content-type: application/json
-
-{
-  "name": "Lexy King",
-  "email": "lexy@yahoo.fr",
-  "password": "la vie est belle"
-}
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDQ0Y2I4ZWUzNjQwZTRiZWYwMjRiMWUiLCJpYXQiOjE1NjQ3OTM1NjN9.s7_a7SEeL2vWHk3mhYqOOzwAsKVc2Tz7zt5JF-jl5CM
